@@ -1,0 +1,14 @@
+.container {
+  /* background-color: aqua; */
+  padding: 2rem;
+  /* margin-top: 0; */
+}
+.jumbotron {
+  margin-bottom: 0;
+  background-image: url("../images/fancy_deboss.png");
+}
+.row {
+  margin-top: 1rem;
+}
+body {
+}
