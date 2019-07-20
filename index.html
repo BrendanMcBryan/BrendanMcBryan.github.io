@@ -4,56 +4,277 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>About</title>
+    <title>Brendan's Coding Portfolio</title>
+
     <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <header>
-    <!-- wrapper fo -->
-    <section class="topsec">
-      <div class="logoname">
-        Brendan McBryan
-      </div>
-      <nav>
-        <div class="btn">
-          <a href="./index.html">About</a>
-        </div>
-        <div class="btn">
-          <a href="./portfolio.html">Portfolio</a>
-        </div>
-        <div class="btn">
-          <a href="./contact.html">Contact</a>
+  <body class="d-flex flex-column h-100">
+    <section class="container wrapper" id="menuSection">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark d-flex flex-fill justify-content-right"
+      >
+        <a class="navbar-brand" href="#">Brendan McBryan</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-right d-flex flex-fill">
+            <div class="d-flex flex-fill"><!--spacer--></div>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >About <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Coding</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Design</a>
+              </div>
+            </li>
+            <a class="nav-link" href="#"
+              >Contact <span class="sr-only">(current)</span></a
+            >
+          </ul>
         </div>
       </nav>
     </section>
-  </header>
 
-  <body>
-   
-    <div class="wrapper">
-      <article class="aboutme">
-        <h1>About Me</h1>
-        <hr />
-    
-        <img src="./assets/images/lido200.jpg" alt="profile pic" id="brendan" />
-        <p>
-          Hello and welcome to my little bio page. My name is Brendan and I am
-          currently enrolled in the PENN LPS Tech Bootcamp. This website, along
-          with this text, was created in order to illustrate my knowledge of
-          HTML and CSS.
-        </p>
-        <p>
-          I live with my wife Gahl, and my and two cats, io and oi, in the Rail
-          Park neighborhood of Philadelphia. Never Heard of it? Fair enough,
-          these real estate PR releases don't always take. Rail Park is a small
-          city park east of Broad and north of Vine. It really is a beautiful
-          urban park and you should check it out yourself.
-        </p>
-      </article>
+    <div class="container wrapper">
+      <section class="card-columns">
+        <!-- Live Like Locals -->
+        <div class="card bg-danger">
+          <img
+            class="card-img-top"
+            src="https://lh3.googleusercontent.com/p/AF1QipMUJp41LvDs2VkwaP2PU7UFAp-piZGeZoOmr0yr=s1600-w1200"
+            alt="World Map"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white">Live Like Locals</h5>
+            <p class="card-text">
+              Team Project, Web Portal to Local info. Lots of technology
+            </p>
+            <a
+              href="https://github.com/Rebeacca/LiveLikeLocals"
+              class="card-link card-link-repo"
+              >Repo</a
+            >
+            <a
+              href="https://rebeacca.github.io/LiveLikeLocals/"
+              class="card-link card-link-deploy"
+              >Deployment</a
+            >
+          </div>
+        </div>
+
+        <!-- Train Schedluer -->
+        <div class="card bg-info">
+          <img
+            class="card-img-top"
+            src="./assets/images/portfolio/trainscheduler.png"
+            alt="World Map"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white">Train Scheduler</h5>
+            <p class="card-text text-white">
+              Moment.js and more on Clock Maths!
+            </p>
+            <a
+              href="https://github.com/BrendanMcBryan/TrainScheduler"
+              class="card-link card-link-repo"
+              >Repo</a
+            >
+            <a
+              href="https://brendanmcbryan.github.io/TrainScheduler/"
+              class="card-link card-link-deploy"
+              >Deployment</a
+            >
+          </div>
+        </div>
+
+        <!-- Giftastic   -->
+        <div class="card bg-warning">
+          <img
+            class="card-img-top"
+            src="https://brendanmcbryan.github.io/Giftastic/assets/images/simsponsbg.jpg"
+            alt="Evil Gem Game"
+          />
+          <div class=" d-flex flex-column card-nopad">
+            <div class="card-body">
+              <h5 class="card-title ">GifTastic!</h5>
+              <p class="card-text ">
+                Cartoon Themed Gif Portal, now with API pulls!
+              </p>
+              <a
+                href="https://github.com/BrendanMcBryan/Giftastic"
+                class="card-link card-link-repo"
+                >Repo</a
+              >
+              <a
+                href="https://brendanmcbryan.github.io/Giftastic/"
+                class="card-link card-link-deploy"
+                >Deployment</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Geography Trivia Game -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./assets/images/portfolio/WorldMap.png"
+            alt="World Map"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Geography Trivia</h5>
+            <p class="card-text">
+              Timers in JavaScirpt and z-index in CSS are illustrated!
+            </p>
+            <a
+              href="https://github.com/BrendanMcBryan/TrivaGame"
+              class="card-link card-link-repo"
+              >Repo</a
+            >
+            <a
+              href="https://brendanmcbryan.github.io/TrivaGame/"
+              class="card-link card-link-deploy"
+              >Deployment</a
+            >
+          </div>
+        </div>
+
+        <!-- Word Guess Game   -->
+        <div class="card bg-secondary">
+          <img
+            style="margin: 1rem; width: 90%; text-align: center;"
+            class="card-img-top"
+            src="https://brendanmcbryan.github.io/Word-Guess-Game/assets/images/whale.png"
+            alt="Word Guess Game"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white">Word Guess Game</h5>
+            <p class="card-text text-white">
+              See HTML get manipulated with the worlds greatest Novel.
+            </p>
+            <a
+              href="https://github.com/BrendanMcBryan/Word-Guess-Game"
+              class="card-link card-link-repo"
+              >Repo</a
+            >
+            <a
+              href="https://brendanmcbryan.github.io/Word-Guess-Game/"
+              class="card-link card-link-deploy"
+              >Deployment</a
+            >
+          </div>
+        </div>
+
+        <!-- Evil Gem Game   -->
+        <div class="card bg-primary">
+          <img
+            class="card-img-top"
+            src="./assets/images/portfolio/evilgem.png"
+            alt="Evil Gem Game"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white">Crystal Gem</h5>
+            <p class="card-text text-white">
+              Destroy the Gem with javascript maths!
+            </p>
+            <a
+              style="color: white"
+              href="https://github.com/BrendanMcBryan/EvilCrystalGame"
+              class="card-link card-link-repo"
+              >Repo</a
+              >
+              <a
+              style="color: white"
+              href="https://brendanmcbryan.github.io/EvilCrystalGame/"
+              class="card-link card-link-deploy"
+              >Deployment</a
+            >
+          </div>
+        </div>
+
+        <!-- Responsive Portfolio card -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="https://brendanmcbryan.github.io/Responsive-Portfolio/assets/images/lido200.jpg"
+            alt="Portfolio Image"
+          />
+          <div class="card-img-overlay d-flex flex-column card-nopad">
+            <div class="mt-auto dark-card-text">
+              <h5 class="card-title text-white">Responsive Portfolio</h5>
+              <p class="card-text text-white">
+                Our First Project, the begining of the site you see here.
+              </p>
+              <a
+                href="https://github.com/BrendanMcBryan/Responsive-Portfolio"
+                class="card-link card-link-repo"
+                >Repo</a
+              >
+              <a
+                href="https://brendanmcbryan.github.io/Responsive-Portfolio/"
+                class="card-link card-link-deploy"
+                >Deployment</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </body>
 
-  <footer>
-    Copyright
-  </footer>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
