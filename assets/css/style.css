@@ -1,21 +1,13 @@
-#menuSection {
-  margin-bottom: 1rem;
+section {
+  margin-bottom: 1.5rem;
 }
 
+/* this is the styling for the once card that breaks away from bootstrap styling */
 .dark-card-text {
-  background-color: rgba(31, 31, 31, 0.80);
+  background-color: rgba(31, 31, 31, 0.8);
   padding: 1rem;
 }
+
 .card-nopad {
   padding: 0;
-}
-
-
-
-footer {
-  background: linear-gradient(
-    217deg,
-    rgba(255, 0, 0, 0.8),
-    rgba(255, 0, 0, 0) 70.71%
-  );
 }

@@ -14,9 +14,11 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="d-flex flex-column h-100">
+    <!-- Navigation Header Menu Section -->
     <section class="container wrapper" id="menuSection">
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-dark d-flex flex-fill justify-content-right"
@@ -38,38 +40,44 @@
           <ul class="navbar-nav justify-content-right d-flex flex-fill">
             <div class="d-flex flex-fill"><!--spacer--></div>
             <li class="nav-item active">
-              <a class="nav-link" href="#"
+              <a class="nav-link" href="#aboutSection"
                 >About <span class="sr-only">(current)</span></a
               >
             </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
+            <li class="nav-item active">
+              <a class="nav-link" href="#cardsSection"
+                >Portfolio <span class="sr-only">(current)</span></a
               >
-                Portfolio
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Coding</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Design</a>
-              </div>
             </li>
-            <a class="nav-link" href="#"
-              >Contact <span class="sr-only">(current)</span></a
-            >
+            <li class="nav-item active">
+              <a class="nav-link" href="#contactSection"
+                >Contact <span class="sr-only">(current)</span></a
+              >
+            </li>
+
           </ul>
         </div>
       </nav>
     </section>
 
-    <div class="container wrapper">
+    <!-- About Section -->
+    <section class="container wrapper" id="aboutSection">
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          About Me
+        </div>
+        <div class="card-body bg-light">
+          <p class="card-text">
+            Welcome to my coding portfolio. Below you will find links to the
+            repos as well as the deployments of my various coding efforts. Feel
+            free to poke around. You can contact me at the bottom of the page.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <div class="container wrapper" id="cardsSection">
       <section class="card-columns">
         <!-- Live Like Locals -->
         <div class="card bg-danger">
@@ -216,8 +224,8 @@
               href="https://github.com/BrendanMcBryan/EvilCrystalGame"
               class="card-link card-link-repo"
               >Repo</a
-              >
-              <a
+            >
+            <a
               style="color: white"
               href="https://brendanmcbryan.github.io/EvilCrystalGame/"
               class="card-link card-link-deploy"
@@ -255,11 +263,43 @@
       </section>
     </div>
 
+    <!-- Contact Section -->
+    <section class="container wrapper" id="contactSection">
+      <div class="card border-dark">
+        <div class="card-header bg-dark text-white">
+          Use the Links below to contact or find out more about me.
+        </div>
+        <div class="card-body bg-light">
+          <a href="https://github.com/BrendanMcBryan" class="btn btn-secondary"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/brendan-mcbryan-b5b543b/"
+            class="btn btn-primary"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+
+          <a href="http://designingintent.com/" class="btn btn-success"
+            ><i class="fab fa-chrome"></i
+          ></a>
+          <a href="tel:6787720531" class="btn btn-warning"
+            ><i class="fas fa-mobile"></i> 678.772.0531</a
+          >
+          <a href="mailto:brendan.mcbryan@gmail.com" class="btn btn-warning"
+            ><i class="fas fa-envelope-open-text"></i
+          ></a>
+          <a href="http://designingintent.com/PDFs/McBryan.Resume.pdf" class="btn btn-danger text-dark"
+            ><i class="far fa-file"></i> Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
     <footer class="footer mt-auto py-3">
       <div class="container">
         <span class="text-muted">Place sticky footer content here.</span>
       </div>
-    </footer>
+    </footer> -->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -276,5 +316,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/cc45af3f98.js"></script>
   </body>
 </html>
