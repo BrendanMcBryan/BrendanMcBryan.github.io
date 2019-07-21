@@ -2,6 +2,21 @@ section {
   margin-bottom: 1.5rem;
 }
 
+body {
+  background: linear-gradient(
+    to bottom right,
+    cyan,
+    #f8f8f84b 1%,
+    #d3d1d373 99%,
+    cyan
+  );
+}
+
+.navbar {
+  padding-top: 3rem;
+
+}
+
 /* this is the styling for the once card that breaks away from bootstrap styling */
 .dark-card-text {
   background-color: rgba(31, 31, 31, 0.8);
